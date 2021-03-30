@@ -1,0 +1,42 @@
+.navigation {
+    background-color: $color-primary-light;
+    height: max-content;
+    padding: 1rem 2rem;
+    box-shadow: 0 0.5rem 1rem -1rem rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+
+    &__link {
+        text-align: right;
+        margin: auto 0;
+
+        & li {
+            display: inline-block;
+            list-style: none;
+
+            & a {
+                &,
+                &:link,
+                &:visited {
+                    display: inline-block;
+                    padding-left: 2rem;
+                    padding-right: 2rem;
+                    text-align: center;
+                    text-decoration: none;
+                    font-weight: 700;
+                    color: $color-white;
+
+                    @include respond(tab-port) {
+                        padding: 1rem;
+                    }
+                }
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+}

@@ -1,0 +1,30 @@
+.composition {
+    position: relative;
+
+    &__photo {
+        width: 20rem;
+        height: 20rem;
+        position: absolute;
+
+        &--p1 {
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        &--p2 {
+            @include absCenter;
+            top: 15rem;
+            left: 50%;
+            
+            z-index: 11;
+        }
+
+        &--p3 {
+            top: 10rem;
+            right: 0;
+            z-index: 12;
+        }
+        
+    }
+}

@@ -1,0 +1,77 @@
+body {
+    font-family: "Commisioner", sans-serif;
+    font-weight: 400;
+    font-size: $default-font-size;
+    line-height: 1.7;
+    color: $color-grey-dark-3;
+}
+
+.header {
+    margin: auto;
+
+    &__heading-primary {
+        color: $color-white;
+
+        margin-bottom: 4rem;
+
+        &--main {
+            display: block;
+            letter-spacing: 1.4rem;
+            margin-top: 1rem;
+            font-size: 7rem;
+            color: $color-white;
+            text-align: center;
+            text-shadow: 0.2rem 0.2rem 0.4rem $color-black;
+            font-family: "Archivo", sans-serif;
+            font-weight: 700;
+
+            @include respond(tab-port) {
+                font-size: 8rem;
+                letter-spacing: 1.5rem;
+            }
+
+            @include respond(phone) {
+                font-size: 5rem;
+                letter-spacing: 1.2rem;
+            }
+
+            & span {
+                color: $color-secondary-light;
+            }
+        }
+    }
+}
+
+.heading-secondary {
+    font-size: 4rem;
+    color: $color-secondary-light;
+    margin-bottom: 2rem;
+    text-shadow: .1rem .1rem .1rem $color-black;
+    font-family: "Archivo", sans-serif;
+    letter-spacing: 0.2rem;
+
+    @include respond(phone) {
+        font-size: 3.4rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+.heading-tertiary {
+    font-size: 3.2rem;
+    color: $color-white;
+    margin-bottom: 2rem;
+    text-shadow: .1rem .1rem .1rem $color-black;
+    font-family: "Archivo", sans-serif;
+    letter-spacing: 0.2rem;
+
+    @include respond(phone) {
+        font-size: 2.5rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+.paragraph {
+    &:not(:last-child) {
+        margin-bottom: 3rem;
+    }
+}

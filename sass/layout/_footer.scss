@@ -1,0 +1,47 @@
+.footer {
+    height: 8rem;
+    width: 100%;
+    background-color: $color-primary-light;
+    padding: 1rem 10rem;
+    color: $color-white;
+    display: flex;
+    flex-direction: row;
+    
+
+    @include respond(tab-port) {
+        padding: 1rem 5rem;
+        font-size: 1.2rem;
+    }
+
+    &__link {
+        text-align: right;
+        margin: auto 0;
+        flex: 50%;
+
+        & a {
+            &,
+            &:link,
+            &:visited {
+                display: inline-block;
+                width: 8rem;
+                text-align: center;
+                text-decoration: none;
+                font-weight: 700;
+                color: white;
+
+                @include respond(tab-port) {
+                    width: 5rem;
+                }
+            }
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__copyright {
+        margin: auto 0;
+        flex: 50%;
+    }
+}
